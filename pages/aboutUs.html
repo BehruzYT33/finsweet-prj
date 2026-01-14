@@ -4,8 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+<body class="bg-gray-50">
+    <header class="py-[16px]">
+        <nav class="container mx-auto flex justify-between items-center px-4">
+            <a href="">
+                <img src="../images/Logo.svg" alt="">
+            </a>
+            <ul class="flex items-center gap-[32px]">
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Services</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+                <li>
+                    <button class="px-[32px] py-[18px] bg-[#F58A071A] rounded-[31px] text-[#F58A07] font-[700]">
+                        Clone project
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container mx-auto px-4 my-12">
+        <div class="bg-white shadow-2xl rounded-3xl overflow-hidden flex flex-col md:flex-row h-[699px]">
+          <div class="md:w-1/2 h-full">
+            <img src="../images/6fdeb80220974e50e6e1fea365ce459be8adc818.png" 
+              alt="Photo" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <div class="md:w-1/2 p-12 md:p-16 space-y-10 flex flex-col justify-center">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900">We value human, organizational, and operational intelligence, not just artificial</h1>
+            <div class="space-y-5 text-gray-700 text-xl">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Aliquam leo odio, sagittis quis ornare quis.</p>
+            </div>
+            <a href="http://www.vim.be" class="inline-block bg-[#F58A07] hover:bg-orange-600 text-white font-medium py-4 px-10 rounded-lg text-xl transition w-fit">
+              Work With Us
+            </a>
+          </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 my-20">
+        <div class="bg-white rounded-3xl overflow-hidden">
+            <div class="p-12 md:p-16">
+                <h2 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-8">The energy of a start-up combined with 30 years of experience</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-12">
+                    <div class="space-y-4">
+                        <div class="text-[#F58A07] text-4xl md:text-5xl font-bold">15+</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Awards received</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-[#F58A07] text-4xl md:text-5xl font-bold">500+</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Clients served</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-[#F58A07] text-4xl md:text-5xl font-bold">34</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Employees</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="text-[#F58A07] text-4xl md:text-5xl font-bold">130+</div>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900">Custom solutions</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscin. Curabitur sit amet eros elit et.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 my-20">
+      <div class="bg-white rounded-3xl p-12 md:p-16">
+          <h2 class="text-4xl md:text-5xl font-bold leading-tight text-gray-900 mb-8">We want to get local identification in every corner of the world in this era of global citizenship.</h2>
+          
+          <div class="flex flex-col lg:flex-row gap-12 mt-12">
+              <div class="lg:w-2/5">
+                  <div class="mb-10">
+                      <p class="text-gray-600 text-lg mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="text-gray-600 text-lg mb-4">Cuciscius sit amet enimdulcisi, haciniorit elit ex mattis magna.</p>
+                      <p class="text-gray-600 text-lg">Tamur. Vivamus commodo semplici ut, et pulvinque.</p>
+                  </div>
+                  
+                  <div class="bg-gradient-to-r from-orange-50 to-orange-100 rounded-2xl p-8">
+                      <h3 class="text-2xl font-bold text-gray-900 mb-4">Teamwork is the only way we work</h3>
+                      <div class="space-y-4 text-gray-700">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cuciscius sit amet, consectetur adipiscing elit.</p>
+                          <p>Cuciscius sit amet, consectetur adipiscing elit.</p>
+                          <p>Cuciscius sit amet, consectetur adipiscing elit.</p>
+                          <p>Cuciscius sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="lg:w-3/5">
+                  <div class="bg-gray-200 rounded-2xl w-full h-96 flex items-center justify-center">
+                      <p class="text-gray-500">Photo will be here</p>
+                  </div>
+                  
+                  <div class="mt-8">
+                      <h4 class="text-2xl font-bold text-gray-900">Sally Short</h4>
+                      <div class="mt-4 space-y-2 text-gray-600">
+                          <p>1-2-year-old children’s mother</p>
+                          <p>3-year-old children’s mother</p>
+                          <p>4-year-old children’s mother</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <footer class="bg-[#0D1317] text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+            <div>
+                <img src="./images/Logo.svg" alt="Finsweet Logo" class="mb-6">
+                <h3 class="text-2xl font-semibold mb-4">Bespoke software solutions</h3>
+                <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+                    <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+                    <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+                    <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Company</h4>
+                <ul class="space-y-3">
+                    <li><a href="#" class="hover:text-orange-500">About Us</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Careers</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Services</a></li>
+                    <li><a href="#" class="hover:text-orange-500">Blog</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Connect</h4>
+                <ul class="space-y-3">
+                    <li><a href="mailto:hi@finsweet.com" class="hover:text-orange-500">hi@finsweet.com</a></li>
+                    <li><a href="tel:+1234567890" class="hover:text-orange-500">+ (123) 456-7890</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-6">Join Newsletter</h4>
+                <div class="mb-4">
+                    <input type="email" placeholder="Type email here" class="w-full px-4 py-3 rounded-lg bg-gray-800 text-white placeholder-gray-400">
+                </div>
+                <button class="px-6 py-3 bg-orange-500 rounded-lg font-semibold hover:bg-orange-600">Subscribe</button>
+            </div>
+        </div>
+        
+        <div class="pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <p>© All rights reserved – Finsweet</p>
+            </div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-orange-500">Privacy Policy</a>
+                <a href="#" class="hover:text-orange-500">Terms & Conditions</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
