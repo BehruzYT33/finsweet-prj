@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <header class="py-[16px]">
+<body class="bg-white">
+
+ 
+    <header class="py-[16px] bg-white border-b border-gray-200">
         <nav class="container mx-auto flex justify-between items-center px-4">
-            <a href="../index.html">
-                <img src="../images/Logo.svg" alt="">
-            </a>
+            <a href="../index.html" class="font-bold text-xl">Finsweet</a>
             <ul class="flex items-center gap-[32px]">
-                <li><a href="../pages/aboutUs.html">About Us</a></li> 
-                
-                <li> <a href="../pages/careers.html">Careers</a></li>
-                
-                <li><a href="../pages/services.html">Services</a></li>
-                <li><a href="../pages/blog.html">Blog</a></li>
-                <li><a href="../pages/contactUs.html">Contact Us</a></li>
+                <li><a href="../pages/aboutUs.html" class="text-gray-700 hover:text-black">About Us</a></li>
+                <li><a href="../pages/careers.html" class="text-gray-700 hover:text-black">Careers</a></li>
+                <li><a href="../pages/services.html" class="text-gray-700 hover:text-black">Services</a></li>
+                <li><a href="../pages/blog.html" class="text-gray-700 hover:text-black">Blog</a></li>
+                <li><a href="../pages/contactUs.html" class="text-gray-700 hover:text-black">Contact Us</a></li>
                 <li>
-                    <button class="px-[32px] py-[18px] bg-[#F58A071A] rounded-[31px] text-[#F58A07] font-[700]">
+                    <button class="px-[32px] py-[18px] bg-[#F58A071A] rounded-[31px] text-[#F58A07] font-[700] hover:bg-[#F58A0733]">
                         Clone project
                     </button>
                 </li>
@@ -30,16 +29,50 @@
     </header>
 
 
-    <footer class="bg-[#063255] text-white">
+    <main class="container mx-auto px-4 py-12">
+        <div class="flex flex-col lg:flex-row gap-12">
+           
+            <div class="lg:w-1/2 space-y-8">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-800 mb-4">Have a question? Let’s get in touch with us.</h1>
+                    <p class="text-gray-600">Fill up the Form and our team will get back to you within 24 hrs</p>
+                </div>
+                <form class="space-y-4">
+                    <input type="text" placeholder="First Name" class="w-full bg-[#F5F7FA] px-6 py-3 rounded-lg outline-none">
+                    <input type="text" placeholder="Last Name" class="w-full bg-[#F5F7FA] px-6 py-3 rounded-lg outline-none">
+                    <input type="email" placeholder="Email address" class="w-full bg-[#F5F7FA] px-6 py-3 rounded-lg outline-none">
+                    <textarea placeholder="Type message" rows="5" class="w-full bg-[#F5F7FA] px-6 py-3 rounded-lg outline-none resize-none"></textarea>
+                    <button type="submit" class="px-8 py-3 bg-[#F58A07] hover:bg-[#e07b06] text-white font-bold rounded-lg">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+            <div class="lg:w-1/2 space-y-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Location</h3>
+                        <p class="text-gray-600">DLF Cybercity, Bhubaneswar,<br>India, 652050</p>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-4">Contact Us</h3>
+                        <p class="text-gray-600">020 7983 2905<br>hi@finsweet.com</p>
+                    </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg h-[300px] overflow-hidden">
+                    <img src="../images/9de945d3ece0de305a83e82be04672c24fad5cb1.png" alt="Map" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <footer class="bg-[#063255] text-white mt-16">
         <div class="container mx-auto px-4 py-12">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            
-           
             <div>
-              <h2 class="text-2xl font-bold mb-4">{Finsweet}</h2>
+              <h2 class="text-2xl font-bold mb-4">Finsweet</h2>
               <p class="text-gray-300 mb-6">Bespoke software solutions</p>
-              
-       
               <div class="flex space-x-4">
                 <a href="#" class="text-white hover:text-gray-300">
                   <i class="fab fa-facebook-f"></i>
@@ -55,7 +88,6 @@
                 </a>
               </div>
             </div>
-            
             <div>
               <h3 class="font-bold text-lg mb-4">Company</h3>
               <ul class="space-y-2">
@@ -65,7 +97,6 @@
                 <li><a href="../pages/blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
               </ul>
             </div>
-            
             <div>
               <h3 class="font-bold text-lg mb-4">Connect</h3>
               <ul class="space-y-2">
@@ -73,30 +104,25 @@
                 <li class="text-gray-300">+ (123) 456-7890</li>
               </ul>
             </div>
-            
             <div class="max-w-md">
                 <h3 class="font-bold text-lg mb-4 text-white">Join Newsletter</h3>
                 <div class="flex flex-col gap-4">
-                  <input type="email" placeholder="Type email here"  class="w-full bg-white px-6 py-3 text-gray-800 outline-none rounded-full">
-                  <span>
-                    <button 
-                    class="w-156px bg-[#F58A07] hover:bg-[#e07b06] px-8 py-3 rounded-full font-bold text-white">Subscribe
+                  <input type="email" placeholder="Type email here" class="w-full bg-white px-6 py-3 text-gray-800 outline-none rounded-full">
+                  <button class="w-full bg-[#F58A07] hover:bg-[#e07b06] px-8 py-3 rounded-full font-bold text-white">
+                    Subscribe
                   </button>
-                  </span>
                 </div>
               </div>
-            
           </div>
-          
           <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-white-400">© All rights reserved – Finsweet</p>
+            <p class="text-gray-400">© All rights reserved – Finsweet</p>
             <div class="flex space-x-6 mt-4 md:mt-0">
-              <a href="../pages/privacyPolicy.html" class="text-white-400 hover:text-white">Privacy Policy</a>
-              <a href="#" class="text-white-400 hover:text-white">Terms & Conditions</a>
+              <a href="../pages/privacyPolicy.html" class="text-gray-400 hover:text-white">Privacy Policy</a>
+              <a href="#" class="text-gray-400 hover:text-white">Terms & Conditions</a>
             </div>
           </div>
-          
         </div>
       </footer>
+
 </body>
 </html>

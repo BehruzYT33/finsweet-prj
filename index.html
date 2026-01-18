@@ -6,25 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finsweet - Business Solutions</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <header class="py-[16px]">
-        <nav class="container mx-auto flex justify-between items-center px-4">
-            <a href="./index.html">
-                <img src="./images/Logo.svg" alt="">
+    <header class="py-[16px] bg-white shadow-sm">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4 gap-4 md:gap-0">
+            <a href="./index.html" class="mb-4 md:mb-0">
+                <img src="./images/Logo.svg" alt="Finsweet Logo" class="w-40 md:w-auto">
             </a>
-            <ul class="flex items-center gap-[32px]">
-                <li><a href="./pages/aboutUs.html">About Us</a></li> 
-                
-                <li> <a href="./pages/careers.html">Careers</a></li>
-                
-                <li><a href="./pages/services.html">Services</a></li>
-                <li><a href="./pages/blog.html">Blog</a></li>
-                <li><a href="./pages/contactUs.html">Contact Us</a></li>
+            <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-[32px] text-center md:text-left">
+                <li><a href="./pages/aboutUs.html" class="text-gray-700 hover:text-[#F58A07] duration-200">About Us</a></li> 
+                <li><a href="./pages/careers.html" class="text-gray-700 hover:text-[#F58A07] duration-200">Careers</a></li>
+                <li><a href="./pages/services.html" class="text-gray-700 hover:text-[#F58A07] duration-200">Services</a></li>
+                <li><a href="./pages/blog.html" class="text-gray-700 hover:text-[#F58A07] duration-200">Blog</a></li>
+                <li><a href="./pages/contactUs.html" class="text-gray-700 hover:text-[#F58A07] duration-200">Contact Us</a></li>
                 <li>
-                    <button class="px-[32px] py-[18px] bg-[#F58A071A] rounded-[31px] text-[#F58A07] font-[700]">
+                    <button class="px-6 md:px-[32px] py-3 md:py-[18px] bg-[#F58A071A] rounded-[31px] text-[#F58A07] font-[700] hover:bg-[#F58A07] hover:text-white duration-200 mt-2 md:mt-0">
                         Clone project
                     </button>
                 </li>
@@ -33,73 +32,75 @@
     </header>
 
     <main>
+       
         <section class="bg-[#DCEAF5]">
-            <div class="container mx-auto flex items-center px-4 py-12 md:py-20">
-                <div class="w-full md:w-[650px] flex flex-col gap-6 md:gap-[27px]">
-                    <h1 class="text-4xl md:text-5xl lg:text-[64px] leading-tight md:leading-[72px] font-[600]">Prosper with our bespoke solutions</h1>
-                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
-                    <div class="flex flex-wrap gap-4">
-                        <button class="px-6 md:px-[32px] py-3 md:py-[19px] bg-[#F58A07] rounded-[32px] text-white hover:bg-[darkorange] duration-200">See our services</button>
-                        <button class="px-6 md:px-[32px] py-3 md:py-[19px] bg-transparent rounded-[32px] text-black hover:bg-[#F58A07] hover:text-white duration-300">See All Services</button>
+            <div class="container mx-auto flex flex-col lg:flex-row items-center px-4 py-8 md:py-12 lg:py-20 gap-8 lg:gap-12">
+                <div class="w-full lg:w-[650px] flex flex-col gap-4 md:gap-6 lg:gap-[27px]">
+                    <h1 class="text-3xl md:text-4xl lg:text-[64px] leading-tight md:leading-[72px] font-[600] text-gray-900">Prosper with our bespoke solutions</h1>
+                    <p class="text-gray-600 text-base md:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique</p>
+                    <div class="flex flex-wrap gap-3 md:gap-4">
+                        <button class="px-6 md:px-[32px] py-3 md:py-[19px] bg-[#F58A07] rounded-[32px] text-white hover:bg-[darkorange] duration-200 font-semibold w-full md:w-auto text-center">See our services</button>
+                        <button class="px-6 md:px-[32px] py-3 md:py-[19px] bg-transparent border border-gray-300 rounded-[32px] text-black hover:bg-[#F58A07] hover:text-white hover:border-[#F58A07] duration-300 font-semibold w-full md:w-auto text-center">See All Services</button>
                     </div>
-                    <p>Worked with 100+ Companies</p>
-                    <div class="flex items-center gap-6 md:gap-[45px]">
-                        <img src="./images/Logo (2).svg" alt="">
-                        <img src="./images/Logo (3).svg" alt="">
-                        <img src="./images/Logo (4).svg" alt="">
+                    <p class="text-gray-700 mt-4 md:mt-6">Worked with 100+ Companies</p>
+                    <div class="flex flex-wrap items-center gap-4 md:gap-6 lg:gap-[45px] mt-2">
+                        <img src="./images/Logo (2).svg" alt="Client logo" class="h-8 md:h-10">
+                        <img src="./images/Logo (3).svg" alt="Client logo" class="h-8 md:h-10">
+                        <img src="./images/Logo (4).svg" alt="Client logo" class="h-8 md:h-10">
                     </div>
                 </div>
-                <div class="hidden lg:block">
-                    <img src="./images/Image.png" alt="">
+                <div class="w-full lg:w-auto mt-8 lg:mt-0">
+                    <img src="./images/Image.png" alt="Business solutions illustration" class="w-full h-auto max-w-lg mx-auto lg:max-w-none">
                 </div>
             </div>
         </section>
 
-        <section class="py-20">
+       
+        <section class="py-12 md:py-16 lg:py-20">
             <div class="container mx-auto px-4">
-                <div class="mb-16">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">We help more than 1500 companies from all sectors</h2>
-                    <p class="text-gray-600 text-lg max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit, diverilis penus. Vivamus commodo suscipit tellus at pulviniorisque.</p>
+                <div class="mb-8 md:mb-12 lg:mb-16">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-4 md:mb-6">We help more than 1500 companies from all sectors</h2>
+                    <p class="text-gray-600 text-base md:text-lg max-w-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit, diverilis penus. Vivamus commodo suscipit tellus at pulviniorisque.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="mb-6">
-                            <img src="./images/b8f69e8a31e298cac76a659b0991abae28fbdbee.png" alt="Business strategy" class="w-full h-56 object-cover rounded-2xl">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="mb-4 md:mb-6">
+                            <img src="./images/b8f69e8a31e298cac76a659b0991abae28fbdbee.png" alt="Business strategy" class="w-full h-48 md:h-56 object-cover rounded-xl md:rounded-2xl">
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Business strategy</h3>
-                        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
-                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Business strategy</h3>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                             Learn More
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </a>
                     </div>
                     
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="mb-6">
-                            <img src="./images/fb80f5983d0a93c3314f5e0634348b8f48d20b13.png" alt="Digitalization" class="w-full h-56 object-cover rounded-2xl">
+                    <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="mb-4 md:mb-6">
+                            <img src="./images/fb80f5983d0a93c3314f5e0634348b8f48d20b13.png" alt="Digitalization" class="w-full h-48 md:h-56 object-cover rounded-xl md:rounded-2xl">
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Digitalization</h3>
-                        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
-                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Digitalization</h3>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                             Learn More
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </a>
                     </div>
                     
-                    <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="mb-6">
-                            <img src="./images/568b5b04ae325d91f4ee10b0e7ad2ba7b3b88e02.png" alt="Risk assessment" class="w-full h-56 object-cover rounded-2xl">
+                    <div class="bg-white rounded-2xl md:rounded-3xl p-6 md:p-8 shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="mb-4 md:mb-6">
+                            <img src="./images/568b5b04ae325d91f4ee10b0e7ad2ba7b3b88e02.png" alt="Risk assessment" class="w-full h-48 md:h-56 object-cover rounded-xl md:rounded-2xl">
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Risk assessment</h3>
-                        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
-                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Risk assessment</h3>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cumulate nisi nostrud eros ismortis, hendrerit elit elit,</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                             Learn More
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="w-4 h-4 md:w-5 md:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                             </svg>
                         </a>
@@ -108,171 +109,178 @@
             </div>
         </section>
 
-        <section class="py-20 bg-gray-100">
+        
+        <section class="py-12 md:py-16 lg:py-20 bg-gray-100">
             <div class="container mx-auto px-4">
-                <div class="mb-16">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">We are building software solution that solves your business challenges</h2>
-                    <p class="text-gray-600 text-lg max-w-2xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit. Excepteur sint at et, muntis purus. Vivamus commodo suscipit lata ut poliendreris.</p>
+                <div class="mb-8 md:mb-12 lg:mb-16">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-4 md:mb-6">We are building software solution that solves your business challenges</h2>
+                    <p class="text-gray-600 text-base md:text-lg max-w-2xl">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit. Excepteur sint at et, muntis purus. Vivamus commodo suscipit lata ut poliendreris.</p>
                 </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Business & Investing</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Business & Investing</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
                     </div>
                     
-                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Support</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Support</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
                     </div>
                     
-                    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
-                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                        <div class="w-10 h-10 md:w-12 md:h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 md:mb-6">
+                            <svg class="w-5 h-5 md:w-6 md:h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl md:text-2xl font-semibold text-gray-900 mb-4">Surveying</h3>
-                        <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
+                        <h3 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-900 mb-3 md:mb-4">Surveying</h3>
+                        <p class="text-gray-600 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sit amet ecos biscuit, lumineut est et,</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20">
+     
+        <section class="py-12 md:py-16 lg:py-20">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">The energy of a start-up combined with 30 years of experience.</h2>
-                        <p class="text-gray-600 text-lg mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cu nibhur sit amet enet lacerat, hendrerit elit et, mattis parius. Aromatis commodo suscipit luctus et pulvinarque.</p>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-semibold text-gray-900 mb-4 md:mb-6">The energy of a start-up combined with 30 years of experience.</h2>
+                        <p class="text-gray-600 text-base md:text-lg mb-6 md:mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cu nibhur sit amet enet lacerat, hendrerit elit et, mattis parius. Aromatis commodo suscipit luctus et pulvinarque.</p>
                         
-                        <div class="grid grid-cols-2 gap-8 mb-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
                             <div>
-                                <h3 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">15+</h3>
+                                <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500 mb-2">15+</h3>
                                 <p class="text-lg md:text-xl font-semibold text-gray-900">Awards received</p>
-                                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="text-gray-600 mt-2 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                             <div>
-                                <h3 class="text-3xl md:text-4xl font-bold text-orange-500 mb-2">500+</h3>
+                                <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-orange-500 mb-2">500+</h3>
                                 <p class="text-lg md:text-xl font-semibold text-gray-900">Clients served</p>
-                                <p class="text-gray-600 mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="text-gray-600 mt-2 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div>
-                        <img src="./images/6fdeb80220974e50e6e1fea365ce459be8adc818.png" alt="Team meeting" class="w-full h-auto rounded-3xl shadow-lg">
+                    <div class="mt-8 lg:mt-0">
+                        <img src="./images/6fdeb80220974e50e6e1fea365ce459be8adc818.png" alt="Team meeting" class="w-full h-auto rounded-2xl md:rounded-3xl shadow-lg">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20">
+        <section class="py-12 md:py-16 lg:py-20">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div class="bg-[#EDF7FF] rounded-3xl p-8 md:p-12">
-                        <div class="flex flex-wrap gap-4 mb-6">
-                            <span class="px-5 py-2 bg-[#F58A07] bg-opacity-10 text-[white] font-medium rounded-full">Business strategy</span>
-                            <span class="px-5 py-2 bg-[#F58A07] bg-opacity-10 text-[white] font-medium rounded-full">Digitalization</span>
-                            <span class="px-5 py-2 bg-[#F58A07] bg-opacity-10 text-[white] font-medium rounded-full">Risk assessment</span>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="bg-[#EDF7FF] rounded-2xl md:rounded-3xl p-6 md:p-8 lg:p-12 order-2 lg:order-1">
+                        <div class="flex flex-wrap gap-2 md:gap-4 mb-4 md:mb-6">
+                            <span class="px-3 md:px-5 py-1 md:py-2 bg-[#F58A07] bg-opacity-10 text-[#F58A07] font-medium rounded-full text-xs md:text-sm">Business strategy</span>
+                            <span class="px-3 md:px-5 py-1 md:py-2 bg-[#F58A07] bg-opacity-10 text-[#F58A07] font-medium rounded-full text-xs md:text-sm">Digitalization</span>
+                            <span class="px-3 md:px-5 py-1 md:py-2 bg-[#F58A07] bg-opacity-10 text-[#F58A07] font-medium rounded-full text-xs md:text-sm">Risk assessment</span>
                         </div>
                         
-                        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">Helping clients with research and strategy for their business</h2>
-                        <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
-                        <p class="text-gray-600 mb-8">Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque.</p>
-                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                        <h2 class="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold text-gray-900 mb-4 md:mb-6">Helping clients with research and strategy for their business</h2>
+                        <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+                        <p class="text-gray-600 mb-6 md:mb-8 text-sm md:text-base">Mattis purus. Vivamus commodo suscipit tellus et pellent. Curabitur sit amet eros blan esque.</p>
+                        <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                             See all services →
                         </a>
                     </div>
                     
-                    <div>
-                        <img src="./images/Service image.svg" alt="Team discussion" class="w-full h-auto rounded-3xl">
+                    <div class="order-1 lg:order-2">
+                        <img src="./images/Service image.svg" alt="Team discussion" class="w-full h-auto rounded-2xl md:rounded-3xl">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-gray-100">
+       
+        <section class="py-12 md:py-16 lg:py-20 bg-gray-100">
             <div class="container mx-auto px-4">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
                     <div>
-                        <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">Finsweet Was A Dream<br><span class="text-orange-500">To Work With</span></h2>
-                        <p class="text-gray-600 mb-8">Maecenas officiur scelerisque lorem, at varius lacus tincidunt vel pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
+                        <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-4">Finsweet Was A Dream<br><span class="text-orange-500">To Work With</span></h2>
+                        <p class="text-gray-600 mb-6 md:mb-8 text-sm md:text-base">Maecenas officiur scelerisque lorem, at varius lacus tincidunt vel pellentesque a arcu vitae diam dapibus mattis vel vel orci. Vivamus eleifend nec felis vel auctor.</p>
                         <div class="flex items-center">
-                            <div class="w-16 h-16 bg-gray-300 rounded-full mr-4"></div>
+                            <div class="w-12 h-12 md:w-16 md:h-16 bg-gray-300 rounded-full mr-3 md:mr-4"></div>
                             <div>
-                                <h4 class="text-xl font-semibold">Chikelu Neo</h4>
-                                <p class="text-gray-600">CEO at MacauAI</p>
+                                <h4 class="text-lg md:text-xl font-semibold">Chikelu Neo</h4>
+                                <p class="text-gray-600 text-sm md:text-base">CEO at MacauAI</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div>
-                        <iframe class="w-full h-64 md:h-80 lg:h-96 rounded-3xl shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="mt-8 lg:mt-0">
+                        <div class="relative w-full h-48 md:h-64 lg:h-80 rounded-2xl md:rounded-3xl shadow-lg overflow-hidden">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="flex items-stretch bg-white overflow-hidden">
-            <div class="w-1/2 h-full">
-              <img src="./images/2f58b1ab4704035ad09b7f0130d045eb1774a16e.png" alt="Person with coffee" class="w-full h-full object-cover grayscale">
+
+        <div class="flex flex-col md:flex-row items-stretch bg-white overflow-hidden">
+            <div class="w-full md:w-1/2 h-48 md:h-auto">
+              <img src="./images/2f58b1ab4704035ad09b7f0130d045eb1774a16e.png" alt="Person with coffee" class="w-full h-full object-cover object-center grayscale">
             </div>
-            <div class="w-1/2 p-8 md:p-12 bg-[#F58A07] text-white flex flex-col justify-center">
+            <div class="w-full md:w-1/2 p-6 md:p-8 lg:p-12 bg-[#F58A07] text-white flex flex-col justify-center">
               <h2 class="text-xl md:text-2xl font-medium mb-4">
                 Energy of a start-up<br>
                 combined with 30<br>
                 years of experience.
               </h2>
-              <button class="mt-6 px-6 py-2 bg-white text-[#F58A07] rounded-full font-medium text-sm hover:bg-gray-100 transition self-start">
+              <button class="mt-4 md:mt-6 px-6 py-2 md:py-3 bg-white text-[#F58A07] rounded-full font-medium text-sm md:text-base hover:bg-gray-100 transition self-start">
                 See Job Vacancies
               </button>
             </div>
           </div>
 
-        <section class="py-20">
+
+        <section class="py-12 md:py-16 lg:py-20">
             <div class="container mx-auto px-4">
-                <h2 class="text-3xl md:text-4xl font-semibold text-gray-900 mb-12 text-center">Latest Blog & News</h2>
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 mb-8 md:mb-12 text-center">Latest Blog & News</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                        <img src="./images/b8f69e8a31e298cac76a659b0991abae28fbdbee.png" alt="Blog post" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Why you have to digitalize in 2021</h3>
-                            <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                    <div class="bg-white rounded-xl md:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                        <img src="./images/b8f69e8a31e298cac76a659b0991abae28fbdbee.png" alt="Blog post" class="w-full h-40 md:h-48 object-cover">
+                        <div class="p-4 md:p-6">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4">Why you have to digitalize in 2021</h3>
+                            <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                                 Learn More →
                             </a>
                         </div>
                     </div>
                     
-                    <div class="bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                        <img src="./images/fb80f5983d0a93c3314f5e0634348b8f48d20b13.png" alt="Blog post" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Our internal process and longform vision</h3>
-                            <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                    <div class="bg-white rounded-xl md:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                        <img src="./images/fb80f5983d0a93c3314f5e0634348b8f48d20b13.png" alt="Blog post" class="w-full h-40 md:h-48 object-cover">
+                        <div class="p-4 md:p-6">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4">Our internal process and longform vision</h3>
+                            <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                                 Learn More →
                             </a>
                         </div>
                     </div>
                     
-                    <div class="bg-white rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                        <img src="./images/568b5b04ae325d91f4ee10b0e7ad2ba7b3b88e02.png" alt="Blog post" class="w-full h-48 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-4">Helping the next generation of leaders</h3>
-                            <p class="text-gray-600 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
-                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600">
+                    <div class="bg-white rounded-xl md:rounded-2xl lg:rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+                        <img src="./images/568b5b04ae325d91f4ee10b0e7ad2ba7b3b88e02.png" alt="Blog post" class="w-full h-40 md:h-48 object-cover">
+                        <div class="p-4 md:p-6">
+                            <h3 class="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4">Helping the next generation of leaders</h3>
+                            <p class="text-gray-600 mb-4 md:mb-6 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et.</p>
+                            <a href="#" class="inline-flex items-center text-orange-500 font-semibold hover:text-orange-600 text-sm md:text-base">
                                 Learn More →
                             </a>
                         </div>
@@ -283,75 +291,69 @@
 
     </main>
 
+
     <footer class="bg-[#063255] text-white">
-        <div class="container mx-auto px-4 py-12">
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="container mx-auto px-4 py-8 md:py-12">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             
-           
-            <div>
-              <h2 class="text-2xl font-bold mb-4">{Finsweet}</h2>
-              <p class="text-gray-300 mb-6">Bespoke software solutions</p>
+            <div class="lg:col-span-2 md:col-span-1">
+              <h2 class="text-xl md:text-2xl font-bold mb-3 md:mb-4">{Finsweet}</h2>
+              <p class="text-gray-300 mb-4 md:mb-6 text-sm md:text-base">Bespoke software solutions</p>
               
-       
-              <div class="flex space-x-4">
-                <a href="#" class="text-white hover:text-gray-300">
-                  <i class="fab fa-facebook-f"></i>
+              <div class="flex space-x-3 md:space-x-4">
+                <a href="#" class="text-white hover:text-gray-300 w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#0D445F] flex items-center justify-center">
+                  <i class="fab fa-facebook-f text-sm md:text-base"></i>
                 </a>
-                <a href="#" class="text-white hover:text-gray-300">
-                  <i class="fab fa-twitter"></i>
+                <a href="#" class="text-white hover:text-gray-300 w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#0D445F] flex items-center justify-center">
+                  <i class="fab fa-twitter text-sm md:text-base"></i>
                 </a>
-                <a href="#" class="text-white hover:text-gray-300">
-                  <i class="fab fa-instagram"></i>
+                <a href="#" class="text-white hover:text-gray-300 w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#0D445F] flex items-center justify-center">
+                  <i class="fab fa-instagram text-sm md:text-base"></i>
                 </a>
-                <a href="#" class="text-white hover:text-gray-300">
-                  <i class="fab fa-linkedin-in"></i>
+                <a href="#" class="text-white hover:text-gray-300 w-8 h-8 md:w-10 md:h-10 rounded-full bg-[#0D445F] flex items-center justify-center">
+                  <i class="fab fa-linkedin-in text-sm md:text-base"></i>
                 </a>
               </div>
             </div>
             
             <div>
-              <h3 class="font-bold text-lg mb-4">Company</h3>
+              <h3 class="font-bold text-lg mb-3 md:mb-4">Company</h3>
               <ul class="space-y-2">
-                <li><a href="./pages/aboutUs.html" class="text-gray-300 hover:text-white">About Us</a></li>
-                <li><a href="./pages/careers.html" class="text-gray-300 hover:text-white">Careers</a></li>
-                <li><a href="./pages/services.html" class="text-gray-300 hover:text-white">Services</a></li>
-                <li><a href="./pages/blog.html" class="text-gray-300 hover:text-white">Blog</a></li>
+                <li><a href="./pages/aboutUs.html" class="text-gray-300 hover:text-white text-sm md:text-base">About Us</a></li>
+                <li><a href="./pages/careers.html" class="text-gray-300 hover:text-white text-sm md:text-base">Careers</a></li>
+                <li><a href="./pages/services.html" class="text-gray-300 hover:text-white text-sm md:text-base">Services</a></li>
+                <li><a href="./pages/blog.html" class="text-gray-300 hover:text-white text-sm md:text-base">Blog</a></li>
               </ul>
             </div>
             
             <div>
-              <h3 class="font-bold text-lg mb-4">Connect</h3>
+              <h3 class="font-bold text-lg mb-3 md:mb-4">Connect</h3>
               <ul class="space-y-2">
-                <li class="text-gray-300">hi@finsweet.com</li>
-                <li class="text-gray-300">+ (123) 456-7890</li>
+                <li class="text-gray-300 text-sm md:text-base">hi@finsweet.com</li>
+                <li class="text-gray-300 text-sm md:text-base">+ (123) 456-7890</li>
               </ul>
             </div>
             
-            <div class="max-w-md">
-                <h3 class="font-bold text-lg mb-4 text-white">Join Newsletter</h3>
-                <div class="flex flex-col gap-4">
-                  <input type="email" placeholder="Type email here"  class="w-full bg-white px-6 py-3 text-gray-800 outline-none rounded-full">
-                  <span>
-                    <button 
-                    class="w-156px bg-[#F58A07] hover:bg-[#e07b06] px-8 py-3 rounded-full font-bold text-white">Subscribe
-                  </button>
-                  </span>
+            <div class="md:col-span-2 lg:col-span-1">
+                <h3 class="font-bold text-lg mb-3 md:mb-4">Join Newsletter</h3>
+                <div class="flex flex-col gap-3 md:gap-4">
+                  <input type="email" placeholder="Type email here" class="w-full bg-white px-4 md:px-6 py-2 md:py-3 text-gray-800 outline-none rounded-full text-sm md:text-base">
+                  <button class="w-full md:w-auto bg-[#F58A07] hover:bg-[#e07b06] px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-white text-sm md:text-base">Subscribe</button>
                 </div>
               </div>
             
           </div>
           
-          <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p class="text-white-400">© All rights reserved – Finsweet</p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-              <a href="./pages/privacyPolicy.html" class="text-white-400 hover:text-white">Privacy Policy</a>
-              <a href="#" class="text-white-400 hover:text-white">Terms & Conditions</a>
+          <div class="border-t border-gray-700 mt-8 md:mt-12 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm md:text-base mb-4 md:mb-0 text-center md:text-left">© All rights reserved – Finsweet</p>
+            <div class="flex space-x-4 md:space-x-6">
+              <a href="./pages/privacyPolicy.html" class="text-gray-400 hover:text-white text-sm md:text-base">Privacy Policy</a>
+              <a href="#" class="text-gray-400 hover:text-white text-sm md:text-base">Terms & Conditions</a>
             </div>
           </div>
           
         </div>
       </footer>
-      
 
 </body>
 
